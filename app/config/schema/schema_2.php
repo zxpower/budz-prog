@@ -13,5 +13,13 @@ class AppSchema extends CakeSchema {
 	function after($event = array()) {
 	}
 
+	var $instances = array(
+		'active' => array('type' => 'integer', 'null' => false, 'default' => 0, 'length' => 1),
+		'validate' => array('type' => 'string', 'length' => 32)
+	);
+	
+	var $users = array(
+		'active' => array('type' => 'integer', 'null' => false, 'default' => 0, 'length' => 1),
+	);
 }
 ?>
