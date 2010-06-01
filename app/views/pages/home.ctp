@@ -51,9 +51,8 @@ endif;
 <h3><?php __('Contents'); ?></h3>
 <p>
 	<?php
-		echo $this->Html->link(
-			__('Home',true),
-			array('controller' => 'pages', 'action' => 'display', 'home')
-		);
+		echo $this->Html->link(__('Home',true),array('controller' => 'pages', 'action' => 'display', 'home'));
+	?> | <?php
+		echo $this->Html->link(__('User Admin',true),array('controller' => 'users', 'action' => 'index'));
 	?>
 </p>

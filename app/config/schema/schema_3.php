@@ -13,5 +13,9 @@ class AppSchema extends CakeSchema {
 	function after($event = array()) {
 	}
 
+	var $users = array(
+		'validate' => array('type' => 'string', 'length' => 32)
+	);
+
 }
 ?>
